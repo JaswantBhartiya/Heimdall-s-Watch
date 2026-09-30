@@ -1,10 +1,9 @@
-# Aegis-Wrist: Open-Source Safety Wearable
-
 <div align="center">
   <img src="https://api.iconify.design/material-symbols:shield-person-outline-rounded.svg?color=%23FF2A6D" width="120" alt="Aegis-Wrist Safety Icon" />
   <br><br>
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=27&duration=3000&pause=1000&color=FF2A6D&center=true&vCenter=true&width=750&height=50&lines=Aegis-Wrist%3A+Open-Source+Safety+Wearable;Tamper-Evident+Real-Time+Evidence+Preservation;Discreet+Emergency+Sensing+%26+LTE+Uplink" alt="Typing Effect Headline" />
 </div>
+<br>
 
 > An open-source, low-cost ($20 BOM) discreet safety wristband engineered to automatically buffer, cryptographically sign, and stream evidence during emergencies—even if the device is forcibly seized or destroyed.
 
