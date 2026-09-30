@@ -1,10 +1,16 @@
 # Aegis-Wrist: Open-Source Safety Wearable
 
+<div align="center">
+  <img src="https://api.iconify.design/material-symbols:shield-person-outline-rounded.svg?color=%23FF2A6D" width="120" alt="Aegis-Wrist Safety Icon" />
+  <br><br>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=27&duration=3000&pause=1000&color=FF2A6D&center=true&vCenter=true&width=750&height=50&lines=Aegis-Wrist%3A+Open-Source+Safety+Wearable;Tamper-Evident+Real-Time+Evidence+Preservation;Discreet+Emergency+Sensing+%26+LTE+Uplink" alt="Typing Effect Headline" />
+</div>
+
 > An open-source, low-cost ($20 BOM) discreet safety wristband engineered to automatically buffer, cryptographically sign, and stream evidence during emergencies—even if the device is forcibly seized or destroyed.
 
 ---
 
-## 📌 Overview
+## Overview
 
 **Aegis-Wrist** addresses the core vulnerability of traditional emergency alerting tools: preventing an attacker from destroying evidence by capturing and transmitting proof *before* and *during* an incident. 
 
@@ -12,14 +18,14 @@ Built on an **ESP32-S3** microcontroller and **SIM7080G LTE-M modem**, the wrist
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **📷 Pre-Event Memory Buffer:** Maintains a continuous 15–30 second rolling video/audio loop in volatile PSRAM, capturing context immediately *before* an emergency trigger.
 - **🆘 Discreet SOS & Anomaly Triggering:** Activates via a flush, silent tactile switch or automated 6-axis IMU detection (impacts, falls, abnormal motion).
-- **🔐 Hardware Cryptographic Signing:** Signs every 2-second chunk with SHA-256 hashing and ECDSA signatures bound to the device’s hardware key to establish legal chain-of-custody.
+- ** Hardware Cryptographic Signing:** Signs every 2-second chunk with SHA-256 hashing and ECDSA signatures bound to the device’s hardware key to establish legal chain-of-custody.
 - **📦 Progressive Chunked Upload:** Slices media into 2-second encrypted fragments, transmitting data progressively so partial evidence survives network dropouts or device destruction.
-- **📍 GNSS & Contextual RF Logging:** Attaches precise GPS coordinates along with passive Wi-Fi BSSID and Bluetooth MAC signatures as secondary location verification.
-- **💾 Offline Local Backup:** Encrypts and stores unsent evidence chunks on onboard SPI NAND flash during network blackouts, uploading automatically upon reconnection.
+- ** GNSS & Contextual RF Logging:** Attaches precise GPS coordinates along with passive Wi-Fi BSSID and Bluetooth MAC signatures as secondary location verification.
+- **Offline Local Backup:** Encrypts and stores unsent evidence chunks on onboard SPI NAND flash during network blackouts, uploading automatically upon reconnection.
 - **🔓 Tamper & Removal Detection:** Triggers instant alert transmissions if the strap is cut or optical skin proximity is lost.
 - **☀️ Solar-Assisted Charging:** Embedded flexible OPV solar strip along the wristband for trickle-charging power supplementation.
 
@@ -41,7 +47,7 @@ Built on an **ESP32-S3** microcontroller and **SIM7080G LTE-M modem**, the wrist
 
 ---
 
-## 🔄 System Architecture & Data Pipeline
+## System Architecture & Data Pipeline
 
 ```text
 [Camera/Mic Sensors] ---> [ESP32-S3 Rolling PSRAM Buffer (30s)]
@@ -62,7 +68,7 @@ Built on an **ESP32-S3** microcontroller and **SIM7080G LTE-M modem**, the wrist
 
 ---
 
-## 📁 Repository Directory Structure
+## Repository Directory Structure
 
 ```text
 womens-safety-wearable/
@@ -99,7 +105,7 @@ womens-safety-wearable/
 
 ---
 
-## 🚀 Quick Start & Development Setup
+## Quick Start & Development Setup
 
 ### Prerequisites
 
@@ -131,7 +137,7 @@ womens-safety-wearable/
 
 ---
 
-## 🔐 Cryptographic Chain of Custody
+## Cryptographic Chain of Custody
 
 To guarantee evidence is admissible in legal proceedings, the system enforces strict hardware-level authenticity verification:
 
@@ -142,6 +148,6 @@ To guarantee evidence is admissible in legal proceedings, the system enforces st
 
 ---
 
-## 📄 License
+## License
 
-Distributed under the **MIT License**. See `LICENSE` for details.
+Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for details.
