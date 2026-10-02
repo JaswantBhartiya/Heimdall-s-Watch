@@ -1,17 +1,17 @@
 <div align="center">
-  <img src="https://api.iconify.design/material-symbols:shield-person-outline-rounded.svg?color=%23FF2A6D" width="120" alt="Aegis-Wrist Safety Icon" />
+  <img src="https://api.iconify.design/material-symbols:shield-person-outline-rounded.svg?color=%23FF2A6D" width="120" alt="Heimdall's Watch Safety Icon" />
   <br><br>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=27&duration=3000&pause=1000&color=FF2A6D&center=true&vCenter=true&width=750&height=50&lines=Aegis-Wrist%3A+Open-Source+Safety+Wearable;Tamper-Evident+Real-Time+Evidence+Preservation;Discreet+Emergency+Sensing+%26+LTE+Uplink" alt="Typing Effect Headline" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=27&duration=3000&pause=1000&color=FF2A6D&center=true&vCenter=true&width=750&height=50&lines=Heimdall's+Watch%3A+Open-Source+Safety+Wearable;Tamper-Evident+Real-Time+Evidence+Preservation;Discreet+Emergency+Sensing+%26+LTE+Uplink" alt="Typing Effect Headline" />
 </div>
 <br>
 
-> An open-source, low-cost ($20 BOM) discreet safety wristband engineered to automatically buffer, cryptographically sign, and stream evidence during emergencies—even if the device is forcibly seized or destroyed.
+> An open-source, low-cost (inr 2000 BOM) discreet safety wristband engineered to automatically buffer, cryptographically sign, and stream evidence during emergencies—even if the device is forcibly seized or destroyed.
 
 ---
 
 ## Overview
 
-**Aegis-Wrist** addresses the core vulnerability of traditional emergency alerting tools: preventing an attacker from destroying evidence by capturing and transmitting proof *before* and *during* an incident. 
+**Heimdall's Watch** addresses the core vulnerability of traditional emergency alerting tools: preventing an attacker from destroying evidence by capturing and transmitting proof *before* and *during* an incident. 
 
 Built on an **ESP32-S3** microcontroller and **SIM7080G LTE-M modem**, the wristband maintains a continuous 30-second rolling video and audio buffer in volatile PSRAM. Upon manual activation or automatic detection (sudden impact, forced removal), the device cryptographically signs 2-second evidence chunks (SHA-256 + ECDSA) attached with UTC timestamps, GNSS coordinates, and ambient Wi-Fi/BLE signatures, streaming them progressively to cloud endpoints and trusted emergency contacts.
 
