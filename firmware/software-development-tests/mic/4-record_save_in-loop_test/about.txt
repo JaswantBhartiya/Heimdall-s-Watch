@@ -1,0 +1,31 @@
+python -m venv record_and_save_venv
+source record_and_save_venv/bin/activate
+pip install pyserial
+ls /dev/ttyUSB* 
+ls /dev/ttyACM*
+python3 save_audio.py
+
+pip install pyserial
+
+How to Run the Test
+Upload Firmware: Flash the updated C++ code to your ESP32-S3 via PlatformIO.
+
+Close PlatformIO Serial Monitor: Ensure the serial monitor in VS Code/PlatformIO is closed so the Python script can access the COM port.
+
+Execute Python Script: Run python save_audio.py in your terminal.
+
+Speak into Microphone: Watch the terminal count down 3... 2... 1... [RECORDING_NOW]. Speak or clap near the INMP441 mic for 5 seconds.
+
+Listen to Output: Open esp32_audio.wav directly in Windows Media Player, VLC, or Audacity to verify sound quality.
+
+
+
+
+How it Works in Practice
+Background: The wearable is powered on and silently overwriting a 10-second audio loop in RAM. Memory usage stays fixed.
+
+Event Trigger: When a user presses the panic button or issues an 's' command, the MCU stops overwriting, orders the buffer chronologically, and transfers the captured pre-trigger audio directly to the PC/MicroSD.
+
+Reset: Once transferred, the ring buffer resets and resumes continuous background monitoring automatically.
+
+deactivate
